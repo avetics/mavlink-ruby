@@ -5,33 +5,34 @@ module MAVLink; module Log; module Messages
     # radians (-pi..pi)
     def roll
      # @roll ||= float(0..3)
-     debugger
-     @roll ||= int8_t(0..3)
+     #debugger
+     #@roll ||= int8_t(0..3)
+     @roll payload.unpack('e7')[1]
     end
 
     # radians (-pi..pi)
     def pitch
-      @pitch ||= int8_t(4..7)
+      @pitch ||=  payload.unpack('e7')[2]
     end
 
     # radians (-pi..pi)
     def yaw
-      @yaw ||= int8_t(8..11)
+      @yaw ||=  payload.unpack('e7')[3]
     end
 
     # rad/s
     def rollspeed
-      @rollspeed ||= float(12..15)
+      @rollspeed ||= payload.unpack('e7')[4]
     end
 
     # rad/s
     def pitchspeed
-      @pitchspeed ||= float(16..19)
+      @pitchspeed ||= payload.unpack('e7')[5]   
     end
 
     # rad/s
     def yawspeed
-      @yawspeed ||= float(20..23)
+      @yawspeed ||= payload.unpack('e7')[6]
     end
 
   end

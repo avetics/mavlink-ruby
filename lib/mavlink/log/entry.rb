@@ -12,9 +12,9 @@ module MAVLink
         @crc = to_crc(raw_crc)
 
         if false && header.id==40
-          puts raw_time.unpack('H*')
-          puts payload.unpack("H*")
-          puts raw_crc.unpack('H*')
+        #  puts raw_time.unpack('H*')
+        #  puts payload.unpack("H*")
+        #  puts raw_crc.unpack('H*')
         end
       end
 

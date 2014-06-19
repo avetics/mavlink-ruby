@@ -5,9 +5,8 @@ module MAVLink; module Log; module Messages
     # radians (-pi..pi)
     def roll
      # @roll ||= float(0..3)
-    # debugger
-     @roll ||= int8_t(0..3)
      debugger
+     @roll ||= int8_t(0..3)
     end
 
     # radians (-pi..pi)

@@ -4,17 +4,18 @@ module MAVLink; module Log; module Messages
 
     # radians (-pi..pi)
     def roll
-      @roll ||= float(0..3)
+     # @roll ||= float(0..3)
+     @roll ||= float(0..4)
     end
 
     # radians (-pi..pi)
     def pitch
-      @pitch ||= float(4..7)
+      @pitch ||= float(0..8)#float(4..7)
     end
 
     # radians (-pi..pi)
     def yaw
-      @yaw ||= float(8..11)
+      @yaw ||= float(0..12)# float(8..11)
     end
 
     # rad/s

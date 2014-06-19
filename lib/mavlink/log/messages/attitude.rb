@@ -7,6 +7,7 @@ module MAVLink; module Log; module Messages
      # @roll ||= float(0..3)
     # debugger
      @roll ||= int8_t(0..3)
+     debugger
     end
 
     # radians (-pi..pi)

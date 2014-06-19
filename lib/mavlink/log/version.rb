@@ -1,5 +1,5 @@
 module MAVLink
   module Log
-    VERSION = "0.0.9"
+    VERSION = "0.1.1"
   end
 end

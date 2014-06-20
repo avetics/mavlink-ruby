@@ -16,17 +16,18 @@ module MAVLink; module Log; module Messages
 
     # 0%..100%
     def load
+    #  debugger
       @load ||= (uint16_t(12..13) / 10.0)
     end
 
     # V
     def voltage_battery
-      @load ||= (uint16_t(14..15) / 1000.0)
+      @voltage ||= (uint16_t(14..15) / 1000.0)
     end
 
     # A (-1: not measured)
     def current_battery
-      @load ||= (int16_t(16..17) / 100.0)
+      @current ||= (int16_t(16..17) / 100.0)
     end
 
     # 0%..100% (-1: not measured)

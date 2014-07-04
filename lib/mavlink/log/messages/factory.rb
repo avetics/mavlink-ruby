@@ -30,7 +30,7 @@ module MAVLink; module Log; module Messages
       when 150..240; Dummy.new(entry)
       when 253; StatusText.new(entry)
       else
-        puts entry.header.inspect
+      #  puts entry.header.inspect
         nil
       end
     end

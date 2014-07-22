@@ -5,7 +5,7 @@ module MAVLink; module Log; module Messages
     # radians (-pi..pi)
     def roll
      # @roll ||= float(0..3)
-     debugger
+    # debugger
      #@roll ||= int8_t(0..3)
      @roll ||= payload.unpack('e7')[1]
     end

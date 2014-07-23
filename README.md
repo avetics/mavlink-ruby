@@ -13,7 +13,8 @@ Information:
 
 Add this line to your application's Gemfile:
 
-    gem 'mavlink-log'
+    gem 'mavlink-log', :git => "https://github.com/avetics/mavlink-ruby.git"
+
 
 And then execute:
 
